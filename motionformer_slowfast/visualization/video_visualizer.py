@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import torch
 # from detectron2.utils.visualizer import Visualizer
 
-import slowfast.utils.logging as logging
-from slowfast.utils.misc import get_class_names
+import motionformer_slowfast.utils.logging as logging
+from motionformer_slowfast.utils.misc import get_class_names
 
 logger = logging.get_logger(__name__)
 log.getLogger("matplotlib").setLevel(log.ERROR)

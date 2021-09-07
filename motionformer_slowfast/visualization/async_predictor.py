@@ -7,9 +7,9 @@ import queue
 import torch
 import torch.multiprocessing as mp
 
-import slowfast.utils.logging as logging
-from slowfast.datasets import cv2_transform
-from slowfast.visualization.predictor import Predictor
+import motionformer_slowfast.utils.logging as logging
+from motionformer_slowfast.datasets import cv2_transform
+from motionformer_slowfast.visualization.predictor import Predictor
 
 logger = logging.get_logger(__name__)
 

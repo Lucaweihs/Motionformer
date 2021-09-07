@@ -88,7 +88,7 @@ python setup.py build develop
 
 ## Dataset Preparation
 
-Please use the dataset preparation instructions provided in [DATASET.md](slowfast/datasets/DATASET.md).
+Please use the dataset preparation instructions provided in [DATASET.md](motionformer_slowfast/datasets/DATASET.md).
 
 ## Training the Default Motionformer
 

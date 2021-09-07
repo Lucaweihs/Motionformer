@@ -4,11 +4,11 @@
 import numpy as np
 import torch
 
-import slowfast.datasets.utils as data_utils
-import slowfast.utils.logging as logging
-import slowfast.visualization.tensorboard_vis as tb
-from slowfast.utils.misc import get_class_names
-from slowfast.visualization.video_visualizer import VideoVisualizer
+import motionformer_slowfast.datasets.utils as data_utils
+import motionformer_slowfast.utils.logging as logging
+import motionformer_slowfast.visualization.tensorboard_vis as tb
+from motionformer_slowfast.utils.misc import get_class_names
+from motionformer_slowfast.visualization.video_visualizer import VideoVisualizer
 
 logger = logging.get_logger(__name__)
 

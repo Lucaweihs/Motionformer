@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import torch
 import torch.nn.functional as F
 
-import slowfast.datasets.utils as data_utils
-from slowfast.visualization.utils import get_layer
+import motionformer_slowfast.datasets.utils as data_utils
+from motionformer_slowfast.visualization.utils import get_layer
 
 
 class GradCAM:

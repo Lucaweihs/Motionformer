@@ -10,7 +10,7 @@ import torch.utils.data
 from torchvision import transforms
 from iopath.common.file_io import g_pathmgr
 
-import slowfast.utils.logging as logging
+import motionformer_slowfast.utils.logging as logging
 
 from . import autoaugment as autoaugment
 from . import decoder as decoder

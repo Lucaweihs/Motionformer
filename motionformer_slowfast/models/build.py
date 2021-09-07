@@ -4,7 +4,7 @@
 """Model construction functions."""
 import math
 import torch
-import slowfast as slowfast
+import motionformer_slowfast as slowfast
 from fvcore.common.registry import Registry
 
 from . import vit_helper

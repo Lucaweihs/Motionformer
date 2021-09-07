@@ -11,10 +11,10 @@ import sys
 import uuid
 
 import torch
-import slowfast.utils.checkpoint as cu
-import slowfast.utils.multiprocessing as mpu
-from slowfast.utils.misc import launch_job
-from slowfast.utils.parser import load_config
+import motionformer_slowfast.utils.checkpoint as cu
+import motionformer_slowfast.utils.multiprocessing as mpu
+from motionformer_slowfast.utils.misc import launch_job
+from motionformer_slowfast.utils.parser import load_config
 
 from tools.test_net import test
 from tools.train_net import train

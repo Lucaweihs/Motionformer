@@ -10,19 +10,19 @@ from timm.data import Mixup
 import torch
 from fvcore.nn.precise_bn import get_bn_modules, update_bn_stats
 
-from slowfast.config.defaults import get_cfg
-import slowfast.models.losses as losses
-import slowfast.models.optimizer as optim
-import slowfast.utils.checkpoint as cu
-import slowfast.utils.distributed as du
-import slowfast.utils.logging as logging
-import slowfast.utils.metrics as metrics
-import slowfast.utils.misc as misc
-import slowfast.visualization.tensorboard_vis as tb
-from slowfast.datasets import loader
-from slowfast.models import build_model
-from slowfast.utils.meters import TrainMeter, ValMeter, EPICTrainMeter, EPICValMeter
-from slowfast.utils.multigrid import MultigridSchedule
+from motionformer_slowfast.config.defaults import get_cfg
+import motionformer_slowfast.models.losses as losses
+import motionformer_slowfast.models.optimizer as optim
+import motionformer_slowfast.utils.checkpoint as cu
+import motionformer_slowfast.utils.distributed as du
+import motionformer_slowfast.utils.logging as logging
+import motionformer_slowfast.utils.metrics as metrics
+import motionformer_slowfast.utils.misc as misc
+import motionformer_slowfast.visualization.tensorboard_vis as tb
+from motionformer_slowfast.datasets import loader
+from motionformer_slowfast.models import build_model
+from motionformer_slowfast.utils.meters import TrainMeter, ValMeter, EPICTrainMeter, EPICValMeter
+from motionformer_slowfast.utils.multigrid import MultigridSchedule
 from timm.utils import NativeScaler
 
 logger = logging.get_logger(__name__)

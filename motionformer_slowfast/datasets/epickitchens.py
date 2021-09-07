@@ -9,7 +9,7 @@ import torch
 import torch.utils.data
 from torchvision import transforms
 
-import slowfast.utils.logging as logging
+import motionformer_slowfast.utils.logging as logging
 
 from .build import DATASET_REGISTRY
 from .epickitchens_record import EpicKitchensVideoRecord

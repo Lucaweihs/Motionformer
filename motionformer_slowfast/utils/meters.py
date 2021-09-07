@@ -11,9 +11,9 @@ import torch
 from fvcore.common.timer import Timer
 from sklearn.metrics import average_precision_score
 
-import slowfast.utils.logging as logging
-import slowfast.utils.metrics as metrics
-import slowfast.utils.misc as misc
+import motionformer_slowfast.utils.logging as logging
+import motionformer_slowfast.utils.metrics as metrics
+import motionformer_slowfast.utils.misc as misc
 logger = logging.get_logger(__name__)
 
 

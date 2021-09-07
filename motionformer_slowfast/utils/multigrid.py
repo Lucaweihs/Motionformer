@@ -5,7 +5,7 @@
 
 import numpy as np
 
-import slowfast.utils.logging as logging
+import motionformer_slowfast.utils.logging as logging
 
 logger = logging.get_logger(__name__)
 

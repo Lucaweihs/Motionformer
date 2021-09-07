@@ -2,8 +2,8 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
 
 """Wrapper to train and test a video classification model."""
-from slowfast.utils.misc import launch_job
-from slowfast.utils.parser import load_config, parse_args
+from motionformer_slowfast.utils.misc import launch_job
+from motionformer_slowfast.utils.parser import load_config, parse_args
 
 from test_net import test
 from train_net import train

@@ -4,10 +4,10 @@
 A script to benchmark data loading.
 """
 
-import slowfast.utils.logging as logging
-from slowfast.utils.benchmark import benchmark_data_loading
-from slowfast.utils.misc import launch_job
-from slowfast.utils.parser import load_config, parse_args
+import motionformer_slowfast.utils.logging as logging
+from motionformer_slowfast.utils.benchmark import benchmark_data_loading
+from motionformer_slowfast.utils.misc import launch_job
+from motionformer_slowfast.utils.parser import load_config, parse_args
 
 logger = logging.get_logger(__name__)
 

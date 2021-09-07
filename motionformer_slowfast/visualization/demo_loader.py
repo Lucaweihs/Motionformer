@@ -8,8 +8,8 @@ import threading
 import time
 import cv2
 
-import slowfast.utils.logging as logging
-from slowfast.visualization.utils import TaskInfo
+import motionformer_slowfast.utils.logging as logging
+from motionformer_slowfast.visualization.utils import TaskInfo
 
 logger = logging.get_logger(__name__)
 

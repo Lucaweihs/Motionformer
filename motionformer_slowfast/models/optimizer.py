@@ -6,7 +6,7 @@
 import torch
 from .adamw import AdamW
 
-import slowfast.utils.lr_policy as lr_policy
+import motionformer_slowfast.utils.lr_policy as lr_policy
 
 
 def construct_optimizer(model, cfg):
