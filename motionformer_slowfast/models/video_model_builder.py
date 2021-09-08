@@ -267,13 +267,12 @@ class VisionTransformer(nn.Module):
         x = self.pre_logits(x)
         return x
 
-    def forward(self, x):
-        x = self.forward_features(x)
-        x = self.head_drop(x)
+    def features_to_output(self, features: torch.Tensor, ):
+        x = self.head_drop(features)
         if isinstance(self.num_classes, (list,)) and len(self.num_classes) > 1:
             output = []
             for head in range(len(self.num_classes)):
-                x_out = getattr(self, "head%d"%head)(x)
+                x_out = getattr(self, "head%d" % head)(x)
                 if not self.training:
                     x_out = torch.nn.functional.softmax(x_out, dim=-1)
                 output.append(x_out)
@@ -283,3 +282,7 @@ class VisionTransformer(nn.Module):
             if not self.training:
                 x = torch.nn.functional.softmax(x, dim=-1)
             return x
+
+    def forward(self, x):
+        features = self.forward_features(x)
+        return self.features_to_output(features=features)

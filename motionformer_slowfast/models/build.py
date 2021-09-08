@@ -4,7 +4,7 @@
 """Model construction functions."""
 import math
 import torch
-import motionformer_slowfast as slowfast
+import motionformer_slowfast
 from fvcore.common.registry import Registry
 
 from . import vit_helper
@@ -39,7 +39,7 @@ def build_model(cfg, gpu_id=None):
     name = cfg.MODEL.MODEL_NAME
     model = MODEL_REGISTRY.get(name)(cfg)
 
-    if isinstance(model, slowfast.models.video_model_builder.VisionTransformer):
+    if isinstance(model, motionformer_slowfast.models.video_model_builder.VisionTransformer):
         if cfg.VIT.IM_PRETRAINED:
             vit_helper.load_pretrained(
                 model, cfg=cfg, num_classes=cfg.MODEL.NUM_CLASSES, 
